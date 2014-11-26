@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{dd1ea9a7-9a7c-463f-be00-9ec14054d813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Diffrent Vertex arrays">
+      <UniqueIdentifier>{bc0e4663-6dc7-4d74-b95b-f7cac613dcd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestStuff">
+      <UniqueIdentifier>{238ff3f3-cc4a-438d-85e1-ce541af3526e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{3fd1216d-6564-403a-a7b9-e71c59f2bbda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="textures">
+      <UniqueIdentifier>{4e45ce52-93f1-4971-a2a9-b4c8bbe25a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{f3efd7c7-ed3c-4bba-b6c4-e3036d32fdcc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Setup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TestText.h">
+      <Filter>TestStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="TestUI.h">
+      <Filter>textures</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicComm.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketStorage.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="T1.fx">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="notes.txt">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="TestData.txt">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Kan.png">
+      <Filter>textures</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+﻿Build started 26/11/2014 10:57:50 PM.
+     1>Project "C:\T\New folder (3)\DirectX\DirectX\DirectX.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\DirectX.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\T\New folder (3)\DirectX\DirectX\\DirectX\Include" /I"C:\T\New folder (3)\DirectX\DirectX\\Poco\Net\Include" /I"C:\T\New folder (3)\DirectX\DirectX\\poco\foundation\include" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp- /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\t\new folder (3)\directx\directx\setup.h(110): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\setup.h(111): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\gameobject.h(160): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\gameobject.h(164): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\gameobject.h(168): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\gameobject.h(172): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\basiccomm.h(285): warning C4101: 'port' : unreferenced local variable
+     1>c:\t\new folder (3)\directx\directx\basiccomm.h(294): warning C4101: 'temp2' : unreferenced local variable
+     1>c:\t\new folder (3)\directx\directx\basiccomm.h(423): warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>c:\t\new folder (3)\directx\directx\loader.h(337): warning C4553: '==' : operator has no effect; did you intend '='?
+     1>c:\t\new folder (3)\directx\directx\main.cpp(161): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\main.cpp(162): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\main.cpp(177): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\main.cpp(178): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>c:\t\new folder (3)\directx\directx\loader.h(295): warning C4715: 'Loader::InitLoad' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\T\New folder (3)\DirectX\Debug\DirectX.exe" /NOLOGO /LIBPATH:"C:\T\New folder (3)\DirectX\DirectX\\DirectX\Lib\x86" /LIBPATH:"C:\T\New folder (3)\DirectX\DirectX\\poco\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DirectX.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\T\New folder (3)\DirectX\Debug\DirectX.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\T\New folder (3)\DirectX\Debug\DirectX.lib" /MACHINE:X86 Debug\Main.obj
+         LINK : C:\T\New folder (3)\DirectX\Debug\DirectX.exe not found or not built by the last incremental link; performing full link
+         DirectX.vcxproj -> C:\T\New folder (3)\DirectX\Debug\DirectX.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\T\New folder (3)\DirectX\Debug\DirectX.exe;#1" /manifest Debug\DirectX.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\DirectX.unsuccessfulbuild".
+         Touching "Debug\DirectX.lastbuildstate".
+     1>Done Building Project "C:\T\New folder (3)\DirectX\DirectX\DirectX.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.26

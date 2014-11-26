@@ -1,0 +1,190 @@
+0.0,0.5,0.0 
+0.5,-0.5,0.0
+-0.5,-0.5,0.0
+
+
+
+	for(int a = 0;a < Fpostion.size();a++)
+{
+	int tmpp = Fpostion.at(a);
+
+	int firstCounter = 0; // postion
+	int secondCounter=0; //
+	bool btmp = false;
+	
+	int I = 0;
+	index IX;
+	
+	int CtmpVar =1;
+	while(btmp == false)
+	{
+		bool btmp3 = false;
+		
+		if(pData[tmpp + firstCounter] == ' ' && isdigit(pData[tmpp + (firstCounter +1)]))
+		{
+			while(btmp3 == false)
+			{
+
+			char * tmpC = new char; // store the number we will atof
+		
+			int tmp3 = tmpp + (firstCounter +1); //put the start at the first char
+			bool btmp2 =false; //for the scan while
+			int Ctmp3 = 0; //keep track of how mnay postion we track from first charater
+			int Ctmp4 = 0;
+			
+			while(btmp2 ==  false)
+			{
+				if( pData[tmp3 +Ctmp3] == ' ')
+						{
+							printf("Boo");
+						}
+
+				if(pData[tmp3 + Ctmp3] == 47)
+					{
+						btmp2 = true;	
+					}
+
+				if(pData[tmp3 +Ctmp3] != 47)
+				{
+				tmpC[Ctmp4] = pData[tmp3 +Ctmp3];
+				std::cout <<  pData[tmp3 +Ctmp3];
+				}
+				
+				Ctmp3++;
+				Ctmp4++;
+				
+			}
+			
+						switch(CtmpVar)
+						{
+						case 1:
+							{
+							IX.Vertex = (atoi(tmpC));
+							tmpC = new char;
+							Ctmp4 = 0;
+							CtmpVar++;
+							}
+						break;
+
+						case 2:
+							{
+							IX.Textcorrd =(atoi(tmpC));
+							tmpC = new char;
+							Ctmp4 = 0;
+							CtmpVar++;
+							}
+						break;
+
+						case 3:
+							{
+							IX.normal =(atoi(tmpC));
+							tmpC = new char;
+							Ctmp4 = 0;
+							CtmpVar++;
+							}
+						break;
+						} 
+		
+		
+			//firstCounter++;
+		/*
+			if(CtmpVar <= 3)
+			{
+				btmp3 = true;
+			}
+			*/
+	
+
+						
+		if(IX.Vertex <0 && IX.normal <0 && IX.Textcorrd <0)
+		{
+			btmp = true;
+		}
+
+
+			//end
+	}
+	firstCounter++;
+
+	}	
+	firstCounter++;
+}
+	//std::cout << "on face " << a << "\n";
+	IX.Index = a;
+	NewModel->Index->push_back(IX);
+
+
+
+
+
+
+
+
+
+		if(pData[begin + tmp1] == ' ' && isdigit(pData[begin + (tmp1 +1)]) && pData[begin + (tmp1 -1)] != 'f')
+								{
+
+									add =true;
+									stop = true;
+								}
+
+								if(pData[begin + tmp1] == 47)
+								{
+									add =true;
+									stop = true;
+								}
+
+								
+								if(isdigit(pData[begin + tmp1 +1]))
+								{
+									//add =true;
+									stop = false;
+								}
+
+								if(pData[begin + tmp1] != 47 && stop == false)
+								{
+									tmpC[tmp3] = pData[begin + tmp1];
+									std::cout <<  tmpC[tmp3];
+								}
+
+								if(stop == false)
+								{
+								tmp3++;
+								tmp1++;
+								}
+
+								if(add ==true)
+								{
+									switch(tmp2)
+									{
+									case 1:
+										{
+											IX.Vertex =(atoi(tmpC));
+											tmpC = new char;
+											tmp3 = 0;
+											//tmp2++;
+											stop = false;
+										}
+
+									case 2:
+										{
+											IX.Textcorrd =(atoi(tmpC));
+											tmpC = new char;
+											tmp3 = 0;
+										//	tmp2++;
+											stop = false;
+										}
+
+									case 3:
+										{
+											IX.normal =(atoi(tmpC));
+											tmpC = new char;
+											tmp3 = 0;
+										//	tmp2++;
+											stop = false;
+										}
+									
+										}
+									tmp2++;
+
+
